@@ -1,0 +1,23 @@
+# Gmail settings
+set imap_user = "harish.kumar1992@yahoo.in"
+set imap_pass = "password"
+set smtp_url = "smtps://harish.kumar1992@smtp.mail.yahoo.com:465/"
+set smtp_pass = "password"
+set from = "harish.kumar1992@yahoo.com"
+set realname = "Harish Kumar"
+set folder = "imaps://imap.mail.yahoo.com:993"
+set spoolfile = "+INBOX"
+set postponed="+[Gmail]/Drafts"
+set header_cache=~/.mutt/cache/headers
+set message_cachedir=~/.mutt/cache/bodies
+set certificate_file=~/.mutt/certificates
+set move = no
+set sort = 'threads'
+set sort_aux = 'last-date-received'
+set imap_check_subscribed
+
+# Some tweaks
+set imap_keepalive = 300
+set mail_check = 90
+set timeout = 15
+set charset = iso-8859-1
