@@ -1,0 +1,21 @@
+ install setcap command.
+
+ #setcap 'CAP_NET_RAW+eip CAP_NET_ADMIN+eip' /usr/sbin/dumpcap 
+
+ >su 
+ #chown root /usr/sbin/dumpcap 
+ #chmod u+s /usr/bin/dumpcap
+
+Limiting capture permission to only one group
+After having set dumpcap's network privileges:
+
+ Create user "wireshark" in group "wireshark".
+
+#chgrp wireshark /usr/sbin/dumpcap
+
+#chmod o-rx /usr/sbin/dumpcap
+
+>sudo usermod -a -G wireshark windy
+
+
+logout and login
